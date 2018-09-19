@@ -225,6 +225,10 @@ void Map2::pen() {   //将原来的状态输出，达到last-step的作用
 	}
 	player->setFlag(QGraphicsItem::ItemIsFocusable);
 	player->setFocus();
+	for (int i = 0;i < Boxes::boxNum;i++)
+	{
+		box[i]->isArrival();
+	}
 }
 
 
